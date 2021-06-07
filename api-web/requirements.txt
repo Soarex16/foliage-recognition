@@ -1,0 +1,11 @@
+fastapi==0.63.0
+pydantic==1.8.1
+python-multipart==0.0.5
+uvicorn==0.13.4
+numpy==1.19.2
+Keras==2.4.3
+tensorflow==2.4.1
+catboost==0.25
+scikit-image~=0.18.1
+Pillow~=8.1.2
+aiofiles==0.6.0
