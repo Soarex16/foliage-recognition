@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  api-web:
+    build:
+      context: api-web
+    restart: always
+    ports:
+      - ${API_WEB_PORT:-8000}:8000
+   
+  front-web:
+    build:
+      context: front-web
+    restart: always
+    environment:
+      VUE_APP_API_URL: ${VUE_APP_API_URL}
+    ports:
+      - ${FRONT_WEB_PORT:-3000}:80
